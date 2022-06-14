@@ -1,0 +1,70 @@
+/* Postits */
+.postit {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: #fbe364;
+    box-shadow: #ddd 1px 1px 1px;
+    padding: 6px;
+
+    cursor: move;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
+
+.showed {
+    display: flex;
+}
+
+.postit .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.color {
+    cursor: pointer;
+}
+
+.delete {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.color i, .delete i {
+    color: #222;
+}
+
+.content {
+    margin-top: 5px;
+    resize: none;
+    flex: 1;
+    border: none;
+    background-color: transparent;
+}
+
+/* Application */
+#application {
+    display: none; /* Par défaut */
+    width: 100%;
+    flex-direction: column;
+}
+
+/* Toolbar */
+#toolbar {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50px;
+    margin-bottom: 20px;
+}
+
+/* Postits container */
+
+#postit-container {
+    overflow: hidden;
+    height: 500px;
+    flex-grow: 1;
+}

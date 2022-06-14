@@ -1,0 +1,129 @@
+body {
+    background-color: #e6e6e6;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-items: center;
+    justify-content: center;
+
+    padding: 10px;
+}
+
+html {
+    overflow: scroll;
+    /*height: 100vh;*/
+}
+
+h1, h2, p, label, input, footer, button {
+    font-family: 'Nunito', sans-serif;
+}
+
+#loader {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    background-color: white;
+    z-index: 999999;
+    color: black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+#login {
+    z-index: 999;
+    background-color: white;
+    margin-right: 10px;
+    box-shadow: #ddd 3px 3px 3px;
+    border-radius: 2px;
+    min-width: 320px;
+    height: auto;
+
+    padding: 5px 10px 5px 10px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    align-self: center;
+    justify-self: center;
+}
+
+#login h1, #login h2 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#login h2 {
+    border-bottom: 1px solid #ddd;
+}
+
+#login #error {
+    display: none; /* Défaut */
+
+    color: brown;
+    text-align: center;
+}
+
+#login #form {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#login #form input {
+    margin-bottom: 10px;
+    border-radius: 3px;
+    min-height: 30px;
+    padding-left: 10px;
+}
+
+#login #submit-group {
+    display: flex;
+    align-self: flex-end;
+}
+
+#login-spinner {
+    display: none;
+}
+
+.icon-wrapper {
+    margin-right: 10px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.icon-wrapper i {
+    font-size: 30px;
+    color: olivedrab;
+}
+
+.button {
+    padding: 5px;
+    width: 120px;
+
+    border-radius: 3px;
+    border: 0;
+    color: white;
+    background-color: olivedrab;
+    cursor: pointer;
+    box-shadow: #ddd 2px 2px 2px;
+}
+
+#login footer {
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+

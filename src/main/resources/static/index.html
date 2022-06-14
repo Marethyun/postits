@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-That!</title>
+    <!-- NUNITO -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/c1cb56392a.js" crossorigin="anonymous"></script>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+    <script src="js/loader.js"></script>
+    <div id="loader"><p>Chargement...</p></div>
+
+    <main>
+        <div id="login">
+            <h1>Post-That!</h1>
+            <h2>Connexion</h2>
+            <p id="error">Une erreur est suvenue...</p>
+            <div id="form">
+                <label>Nom d'utilisateur</label>
+                <input id="username" type="text">
+    
+                <label>Mot de passe</label>
+                <input id="password" type="password">
+                
+                <div id="submit-group">
+                    <div id="login-spinner" class="icon-wrapper">
+                        <i class="fas fa-asterisk fa-spin"></i>
+                    </div>
+                    <button id="submit-button" type="submit" class="button">Connexion</button>
+                </div>
+            </div>
+            <footer>
+                Copyright - Marethyun
+            </footer>
+        </div>
+
+        <div id="application">
+            <div id="toolbar">
+                <button id="add"><i class="fas fa-plus"></i> Ajouter</button>
+                <button id="disconnect"><i class="fas fa-sign-out-alt"></i> Se déconnecter</button>
+            </div>
+            <div id="postit-container">
+                <!-- Post-its here-->
+            </div>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/postit.js"></script>
+    <script src="js/account.js"></script>
+
+    <script>
+        let login = new Login($('#login'));
+        var app = new Application(login, $('#application'));
+    </script>
+</body>
+</html>
